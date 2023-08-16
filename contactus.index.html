@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,400&family=Poppins:wght@200;300;600&family=Ubuntu:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"">
+    </head> 
+
+            <!-- header section  -->
+            
+    <section class=" sub-header">
+    <nav>
+        <a href="index.html"> <img src="./images/logo.png" alt="Eduford"> </a>
+        <div class="navLinks" id="nav_links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.index.html">ABOUT</a></li>
+                <li><a href="course.index.html">COURSE</a></li>
+                <li><a href="blog.index.html">BLOG</a></li>
+                <li><a href="contactus.index.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+    </section>
+
+    <!-- contact us section  -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d71453.52299600738!2d73.22927594408966!3d20.86009763677062!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sgu!2sin!4v1692119229143!5m2!1sgu!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-cols">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>
+                            XYZ road, ABC building
+                        </h5>
+                        <p>Banglore, Karnataka, In</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>
+                            +1 0123456789
+                        </h5>
+                        <p>Monday to Friday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>
+                            abc@gmail.com
+                        </h5>
+                        <p>Email your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-cols">
+           <form action="">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter Email Address" required>
+                <input type="text" placeholder="Enter your subject" required>
+                <textarea rows="8" placeholder="Message" required></textarea>
+                <button type="submit" class="btn sub-btn">Send Message</button>
+            </form>
+        </div>  
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- javascript for toggle menu  -->
+    <script>
+        var nav_links = document.getElementById("nav_links");
+
+        function showMenu() {
+            nav_links.style.right = "0";
+        }
+        function hideMenu() {
+            nav_links.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni sequi laudantium placeat odit numquam
+            deleniti, distinctio cupiditate commodi, quam sint enim? Animi asperiores amet quia fugit dolores maxime
+            consectetur consequuntur. Accusantium aut saepe blanditiis placeat ad ab rerum similique?
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> By Easy Tutorials</p>
+    </section>
+
+
+
+    </body>
+
+</html>
